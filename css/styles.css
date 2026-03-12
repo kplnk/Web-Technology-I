@@ -74,8 +74,6 @@ nav li a {
 /* misc classes */
 
 .stick {
-    position: sticky;
-    top: 0;
 }
 
 .cardList {
@@ -190,6 +188,10 @@ footer a {
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1000px), print {
     /* Desktop Viewport: Style rules for nav area */
+    nav.stick {
+        position: sticky;
+        top: 0;
+    }
     nav li {
         font-size: 1.5em;
     }
