@@ -7,7 +7,7 @@ body, header, nav, main, footer, img, h1, h3, ul {
 
 /*Style rules for body and images*/
 body {
-    background-color: #333333;
+    background-image: linear-gradient(#262626, #4d4d4d);
 }
 
 img {
@@ -54,12 +54,12 @@ nav li {
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
-    border-top: 1px solid;
+    border: 1px solid #ffffff;
 }
 
 nav li a {
     display: block;
-    color: #f3e6d8;
+    color: #ffffff;
     padding: .5em 2em;
     text-decoration: none;
 }
@@ -68,17 +68,17 @@ nav li a {
 main {
     padding: 2%;
     font-family: Verdana, Arial, sans-serif, Lora;
-    color: #f3e6d8;
+    color: #ffffff;
 }
 
 main p{
     font-size: 1.25em;
-    color: #f3e6d8;
+    color: #ffffff;
 }
 
 main h3{
     padding-top: 2%;
-    color: #f3e6d8;
+    color: #ffffff;
 }
 
 main ul {
@@ -87,7 +87,6 @@ main ul {
 
 /*Style rules for class and id selectors*/
 .link{
-    color: #4d3319;
     text-decoration: none;
     font-weight: bold;
     font-style: italic;
@@ -112,7 +111,6 @@ main ul {
 }
 
 .tel-link {
-    background-color: #2a1f14;
     padding: 2%;
     width: 80%;
     margin-top: 0;
@@ -122,7 +120,7 @@ main ul {
 }
 
 .tel-link a {
-    color: #f6eee4;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -132,12 +130,12 @@ footer {
     text-align: center;
     font-size: 0.85em;
     background-color: #262626;
-    color: #f6eee4;
+    color: #ffffff;
     padding: 1% 0%;
 }
 
 footer a {
-    color: #f3e6d8;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -178,8 +176,8 @@ footer a {
         padding: 0.5em 1.5em;
     }
     nav li a:hover {
-        color: #2a1f14;
-        background-color: #f6eee4;
+        color: #ffffff;
+        background-color: #404040;
     }
 
     /* Desktop Viewport: Style rules for main content */
