@@ -200,7 +200,6 @@ footer a {
     }
     nav li a:hover {
         background-color: #404040;
-        text-shadow: 2px 2px;
     }
 
     /* Desktop Viewport: Style rules for main content */
