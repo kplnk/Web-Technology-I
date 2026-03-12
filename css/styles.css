@@ -5,6 +5,11 @@ body, header, nav, main, footer, img, h1, h3, ul {
     border: 0;
 }
 
+/*Style rules for header*/
+header {
+    color:#ffffff;
+}
+
 /*Style rules for body and images*/
 body {
     background-color: #262626;
