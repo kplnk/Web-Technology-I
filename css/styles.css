@@ -26,13 +26,13 @@ img {
 .mobile h1{
     padding: 2%;
     text-align: center;
-    font-family: Emblema One;
+    font-family: Emblema One, serif;
 }
 
 .mobile h3{
     padding: 2%;
     text-align: center;
-    font-family: Lora;
+    font-family: Lora, serif;
 }
 
 .tab-desk {
@@ -59,7 +59,7 @@ nav li {
 
 nav li a {
     display: block;
-    color: #262626;
+    color: #f3e6d8;
     padding: .5em 2em;
     text-decoration: none;
 }
@@ -68,14 +68,17 @@ nav li a {
 main {
     padding: 2%;
     font-family: Verdana, Arial, sans-serif, Lora;
+    color: #f3e6d8;
 }
 
 main p{
     font-size: 1.25em;
+    color: #f3e6d8;
 }
 
 main h3{
     padding-top: 2%;
+    color: #f3e6d8;
 }
 
 main ul {
