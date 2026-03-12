@@ -71,6 +71,13 @@ nav li a {
     text-decoration: none;
 }
 
+/* misc classes */
+
+.stick {
+    position: sticky;
+    top: 0;
+}
+
 .cardList {
     display: inline-block;
     list-style-type: none;
