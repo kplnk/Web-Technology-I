@@ -54,7 +54,7 @@ nav li {
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
-    border-top: 0.5px solid #f6eee4;
+    border-top: 1px solid;
 }
 
 nav li a {
@@ -187,14 +187,8 @@ footer a {
 
 /* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 1921px), print {
-    body {
-        background: linear-gradient(#f6eee4, #78593a)
-    }
     #wrapper {
         width: 1920px;
         margin: 0 auto;
-    }
-    main {
-        background-color: #f6eee4;
     }
 }
