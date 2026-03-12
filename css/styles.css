@@ -149,6 +149,10 @@ footer a {
         display: none;
     }
 
+    nav, nav li, nav li a {
+        background-color: #262626;;
+    }
+
     /* Tablet Viewport: Style rules for nav area */
     nav li {
         border-top: none;
