@@ -7,7 +7,7 @@ body, header, nav, main, footer, img, h1, h3, ul {
 
 /*Style rules for body and images*/
 body {
-    background-image: linear-gradient(#262626, #4d4d4d);
+    background-color: #262626;
 }
 
 img {
@@ -41,7 +41,7 @@ img {
 
 /*Style rules for navigation area*/
 nav {
-    background-color: #262626;
+    background-image: linear-gradient(#262626, #4d4d4d);
 }
 
 nav ul {
@@ -54,7 +54,8 @@ nav li {
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
-    border: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
 
 nav li a {
@@ -113,10 +114,7 @@ main ul {
 .tel-link {
     padding: 2%;
     width: 80%;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .tel-link a {
@@ -176,7 +174,7 @@ footer a {
         padding: 0.5em 1.5em;
     }
     nav li a:hover {
-        color: #ffffff;
+        color: #1a1a1a;
         background-color: #404040;
     }
 
