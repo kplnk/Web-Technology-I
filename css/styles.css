@@ -39,6 +39,7 @@ body {
 img {
     max-width: 100%;
     display: block;
+    padding: 0.5in;
 }
 
 /* Style rules for cards*/
