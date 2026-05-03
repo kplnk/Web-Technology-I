@@ -294,9 +294,7 @@ footer a {
     }
 
     .grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 20px;
+        grid-template-columns: auto auto auto auto;
     }
 
     aside {
