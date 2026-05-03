@@ -242,7 +242,7 @@ footer a {
     .mobile-nav a {
         color: white;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 2em;
         text-decoration: none;
         padding: 3%;
         display: block;
@@ -317,6 +317,16 @@ footer a {
 
     aside {
         grid-column: 1 / span 2;
+    }
+
+    /* style rules for header */
+    header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+    }
+    span.tab-desk {
+        display: inline;
     }
 }
 
