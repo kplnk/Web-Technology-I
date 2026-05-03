@@ -28,6 +28,7 @@ body, header, nav, main, footer, img, h1, h3, ul {
 
 /*Style rules for header*/
 header {
+    text-align: center;
     color:#ffffff;
     background-color: #404040;
 }
@@ -332,6 +333,12 @@ footer a {
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1000px), print {
+
+    /* Desktop Viewport: Style rule for header */
+    header {
+        padding: 2%;
+    }
+
     /* Desktop Viewport: Style rules for nav area */
     nav.stick {
         position: sticky;
