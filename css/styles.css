@@ -39,7 +39,7 @@ img {
 }
 
 .card:hover {
-    transform: scale(150%);
+    transform: scale(110%);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
