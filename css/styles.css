@@ -22,14 +22,19 @@ img {
 }
 
 /* Style rules for cards*/
+
+.card-description {
+ background-color: darkblue;
+}
+
 .card {
     width: auto;
     height: auto;
-    border-radius: 6px;
+    border-radius: 4px;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
+    position: fixed;
 }
 
 .card img {
@@ -44,9 +49,7 @@ img {
 }
 
 .card-text {
-    position: relative;
-    bottom: 0;
-    left: 0;
+    position: absolute;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -56,7 +59,7 @@ img {
     transition: opacity 0.4s ease;
 }
 
-.card:hover .card-text {
+.card-description:hover .card-text {
     opacity: 1;
 }
 
