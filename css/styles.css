@@ -121,7 +121,7 @@ a {
     color: white;
 }
 
-nav ul li a {
+nav li a {
     display: block;
     color: #ffffff;
     padding: .5em 2em;
@@ -132,7 +132,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-.nav-bar:hover {
+.nav-bar li a:hover {
     linear-gradient(to top, #262626, #404040);
     text-shadow: 2px 2px #000000;
 }
