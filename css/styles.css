@@ -84,6 +84,7 @@ nav li a {
 .cardList {
     list-style-type: none;
     background-image: linear-gradient(#404040, #4d4d4d);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .cardList li {
@@ -117,7 +118,7 @@ main ul {
     margin-bottom: 0.5in;
     padding: 0.5in;
     background-color: #737373;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 /*Style rules for class and id selectors*/
