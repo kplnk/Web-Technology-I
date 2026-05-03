@@ -116,6 +116,7 @@ main ul {
 main div {
     margin-bottom: 0.75in;
     background-color: #b3b3b3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*Style rules for class and id selectors*/
@@ -241,11 +242,11 @@ footer a {
 
     th {
         background-color: #999999;
-        color: white;
+        color: black;
         font-size: 1.15em;
     }
 
-    tr:nth-child(odd) {
+    th:nth-child(odd) {
         background-color: #cccccc;
     }
 }
