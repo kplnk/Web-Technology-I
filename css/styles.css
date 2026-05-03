@@ -113,6 +113,11 @@ main ul {
     list-style-type: square;
 }
 
+main div {
+    margin-bottom: 0.75in;
+    background-color: #b3b3b3;
+}
+
 /*Style rules for class and id selectors*/
 .link{
     text-decoration: none;
