@@ -234,6 +234,29 @@ footer a {
     }
 
     /* Tablet Viewport: Style rules for nav area */
+
+    .mobile-nav a {
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+        text-decoration: none;
+        padding: 3%;
+        display: block;
+    }
+
+    .mobile-nav a.menu-icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu-icon div {
+        height: 55px;
+        width: 55px;
+        background-color: #404040;
+    }
+
     nav li {
         border-top: none;
         display: inline-block;
