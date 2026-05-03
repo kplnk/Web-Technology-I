@@ -34,8 +34,8 @@ img {
 }
 
 .card img {
-    width: auto;
-    height: auto;
+    width: 351px;
+    height: 512px;
     display: block;
 }
 
