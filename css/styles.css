@@ -113,9 +113,10 @@ main ul {
     list-style-type: square;
 }
 
-main div {
-    margin-bottom: 0.75in;
-    background-color: #b3b3b3;
+.box {
+    margin-bottom: 0.5in;
+    padding: 0.5in;
+    background-color: #737373;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
