@@ -210,6 +210,7 @@ footer a {
         font-size: 2em;
         font-weight: bold;
         padding: 1%;
+        color: black;
     }
 
     th, td {
@@ -219,7 +220,7 @@ footer a {
     }
 
     th {
-        background-color: #999999;
+        background-color: #bfbfbf;
         color: black;
         font-size: 1.15em;
     }
