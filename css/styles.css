@@ -151,8 +151,8 @@ main ul {
     list-style-type: square;
 }
 
-.inline-box {
-    display: inline-block;
+.box {
+    display: block;
     margin-bottom: 0.5in;
     padding: 0.5in;
     background-color: #737373;
