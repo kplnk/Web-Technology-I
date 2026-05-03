@@ -22,15 +22,10 @@ img {
 }
 
 /* Style rules for cards*/
-
-.card-description {
- background-color: darkblue;
-}
-
 .card {
     width: auto;
     height: auto;
-    border-radius: 4px;
+    border-radius: 6px;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -44,12 +39,14 @@ img {
 }
 
 .card:hover {
-    transform: scale(110%);
+    transform: scale(150%);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .card-text {
-    position: absolute;
+    position: relative;
+    bottom: 0;
+    left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -59,7 +56,7 @@ img {
     transition: opacity 0.4s ease;
 }
 
-.card-description:hover .card-text {
+.card:hover .card-text {
     opacity: 1;
 }
 
