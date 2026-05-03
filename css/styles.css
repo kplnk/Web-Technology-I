@@ -5,6 +5,10 @@ body, header, nav, main, footer, img, h1, h3, ul {
     border: 0;
 }
 
+.center {
+    text-align: center;
+}
+
 .info {
     background-color: #737373;
     text-align: center;
