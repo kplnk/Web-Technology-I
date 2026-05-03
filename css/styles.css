@@ -41,7 +41,7 @@ img {
 }
 
 .card:hover {
-    transform: scale(15%);
+    transform: scale(150%);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
