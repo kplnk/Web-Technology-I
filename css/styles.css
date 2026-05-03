@@ -360,10 +360,6 @@ footer a {
     nav li a {
         padding: 0.5em 1.5em;
     }
-    nav li a:hover {
-        background-color: #404040;
-        text-shadow: 2px 2px #000000;
-    }
 
     /* Desktop Viewport: Style rules for main content */
     #info ul {
