@@ -196,6 +196,47 @@ footer a {
     nav li a {
         padding: 0.5em;
     }
+
+    /* Style rules for table */
+    table {
+        border: 1px solid #0d0d0d;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    caption {
+        font-size: 2em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    th, td {
+        border: 1px solid #000000;
+        padding: 1%;
+        word-wrap: break-word;
+    }
+
+    th {
+        background-color: #999999;
+        color: black;
+        font-size: 1.15em;
+    }
+
+    th:nth-child(odd) {
+        background-color: #cccccc;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
+    }
 }
 
 /* Media Query for Desktop Viewport */
@@ -250,6 +291,16 @@ footer a {
 
     th:nth-child(odd) {
         background-color: #cccccc;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
     }
 }
 
