@@ -218,6 +218,8 @@ footer a {
         border: 1px solid #0d0d0d;
         border-collapse: collapse;
         margin: 0 auto;
+        width: 100%;
+        table-layout: fixed;
     }
 
     caption {
@@ -229,6 +231,7 @@ footer a {
     th, td {
         border: 1px solid #000000;
         padding: 1%;
+        word-wrap: break-word;
     }
 
     th {
