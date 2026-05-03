@@ -116,7 +116,7 @@ main ul {
 main div {
     margin-bottom: 0.75in;
     background-color: #b3b3b3;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*Style rules for class and id selectors*/
