@@ -5,6 +5,18 @@ body, header, nav, main, footer, img, h1, h3, ul {
     border: 0;
 }
 
+.info {
+    background-color: #737373;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    padding: 2%;
+}
+
+.info h2{
+    font-size: 3em;
+}
+
 /*Style rules for header*/
 header {
     color:#ffffff;
@@ -246,6 +258,12 @@ footer a {
     }
 
     th {
+        background-color: #bfbfbf;
+        color: black;
+        font-size: 2em;
+    }
+
+    td {
         background-color: #bfbfbf;
         color: black;
         font-size: 1.15em;
