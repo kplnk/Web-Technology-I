@@ -55,6 +55,8 @@ img {
 /* Style rules for nav */
 nav {
     background-color: #262626;
+    border-radius: 10px;
+
 }
 
 nav ul {
