@@ -287,3 +287,8 @@ footer a {
     justify-content: center;
     align-items: center;
 }
+
+/* style rules for fade */
+.fade {
+    opacity: 10%;
+}
