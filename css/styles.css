@@ -208,6 +208,15 @@ footer a {
         padding: 2%;
     }
 
+    #mtg,
+    #riftbound,
+    #yugioh {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+
     table {
         border: 1px solid #0d0d0d;
         border-collapse: collapse;
