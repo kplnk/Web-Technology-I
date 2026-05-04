@@ -289,6 +289,6 @@ footer a {
 }
 
 /* style rules for fade */
-.fade {
+.fade:hover {
     opacity: 10%;
 }
