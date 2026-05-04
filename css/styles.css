@@ -25,6 +25,12 @@ body, header, nav, main, footer, img, h1, ul, section {
     border-radius: 8px;
 }
 
+/* style rules for div */
+div {
+    width: 30%;
+    display: inline-block;
+}
+
 /* Style rules for header */
 header {
     text-align: center;
@@ -61,6 +67,10 @@ nav li {
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
+}
+
+nav li {
+    border: 0.5em white;
 }
 
 nav li a {
