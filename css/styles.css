@@ -246,7 +246,7 @@ header {
 
     }
 
-    .mobile-nav  {
+    .mobile-nav, .mobile  {
         display: none;
     }
 
