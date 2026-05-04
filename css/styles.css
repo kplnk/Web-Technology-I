@@ -119,16 +119,20 @@ nav li {
 a {
     text-decoration: none;
     color: white;
-    !important;
+    !important
 }
 
-nav ul li a {
+nav li a {
     display: block;
     color: #ffffff;
     padding: .5em 2em;
     text-decoration: none;
     !important;
-    /* fix issues w boostrap */
+}
+
+.nav li a:hover {
+    linear-gradient(to top, #262626, #404040);
+    text-shadow: 2px 2px #000000;
 }
 
 /* misc classes */
