@@ -8,6 +8,7 @@ body, header, nav, main, footer, img, h1, ul, section {
 /* style rules for section */
 section {
     background-color: whitesmoke;
+    display: inline-block;
 }
 
 /* Style rules for about content */
@@ -28,12 +29,6 @@ section {
 
 .round {
     border-radius: 8px;
-}
-
-/* style rules for div */
-div {
-    width: 30%;
-    display: inline-block;
 }
 
 /* Style rules for header */
