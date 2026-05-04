@@ -5,6 +5,13 @@ body, header, nav, main, footer, img, h1, ul, section {
     border: 0;
 }
 
+/* Style rules for about content */
+#mtg,
+#yugioh,
+#riftbound {
+    margin: 0 2%;
+}
+
 #info {
     clear: left;
     background-color: #737373;
