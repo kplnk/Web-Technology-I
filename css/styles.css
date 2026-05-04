@@ -21,7 +21,8 @@ body, header, nav, main, footer, img, h1, h3, ul {
     font-size: 1.5em;
 }
 
-.tab-desk {
+/* Hide tab-desk class */
+.tab-desk, #menu-links {
     display: none;
 }
 
@@ -71,136 +72,88 @@ img {
     transform: scale(110%);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
+/* Style rules for mobile viewport */
 
-/* Style rules for mobile nav */
-.mobile-nav {
-    display: flex;
-    align-items: stretch;
-    background-color: #262626;
-    position: relative;
-    z-index: 3; /* prevents other items from overlapping/blocking menu when opened*/
-}
-
-.mobile-nav #menu-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #262626;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    z-index: 3;
-}
-
-.mobile-nav #menu-links.active {
-    display: flex;
-}
-
-.mobile-nav #menu-links a {
-    color: white;
-    text-align: center;
-    font-size: 1.2em;
-    text-decoration: none;
-    padding: 1em;
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
     display: block;
-    border-top: 1px solid #404040;
 }
 
-.mobile-nav #menu-links a:hover {
-    background-color: #404040;
-}
-
-.mobile-nav .menu-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 0.5em;
-    margin-left: auto;
-    z-index: 3;
-}
-
-.mobile-nav .menu-icon div {
-    height: 50px;
-    width: 50px;
-    background-color: #404040;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    color: white;
-}
-
-
-/* Style rules for carousel */
-main h2 {
-    color: white;
+/* Style rules for header area */
+.mobile h1{
+    padding: 2%;
     text-align: center;
-    margin-bottom: 1em;
+    font-family: Emblema One, serif;
 }
 
-.carousel {
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
+.mobile h3{
+    padding: 2%;
+    text-align: center;
+    font-family: Lora, serif;
 }
 
-.carousel-inner {
+.tab-desk {
+    display: none;
+}
+
+/*Style rules for navigation area*/
+
+
+#nav-links {
+    display: none;
+}
+
+nav {
     background-color: #262626;
-    position: relative;
+    border-radius: 10px;
 }
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 20px;
-    margin: 0;
+nav ul {
+    list-style-type: none;
     text-align: center;
 }
 
-.carousel-caption h3 {
-    color: white;
+nav li {
+    display: block;
     font-size: 1.5em;
-    margin: 0 0 0.5em 0;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
 
-.carousel-caption p {
+a {
+    text-decoration: none;
     color: white;
-    font-size: 1em;
-    margin: 0;
 }
 
-.carousel-control {
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 8%;
-    opacity: 0.6;
+nav li a {
+    display: block;
+    color: #ffffff;
+    padding: .5em 2em;
+    text-decoration: none;
 }
 
-.carousel-control:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    opacity: 0.8;
+#nav-links:hover {
+    linear-gradient(to top, #262626, #404040);
+    text-shadow: 2px 2px #000000;
 }
 
-.carousel-control.left {
-    left: 0;
+/* misc classes */
+
+.stick {
 }
 
-.carousel-control.right {
-    right: 0;
+.cardList {
+    list-style-type: none;
+    background-image: linear-gradient(#404040, #4d4d4d);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-.carousel-control span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.cardList li {
+    display: inline-block;
+    padding: 10px;
 }
-
 
 /*Style rules for main content*/
 main {
@@ -283,51 +236,115 @@ footer a {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 620px) {
-    /* Tablet Viewport: Show tab-desk nav, hide mobile nav */
+@media screen and (min-width: 620px), print {
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
     .tab-desk {
         display: block;
     }
 
-    .mobile-nav {
+    .mobile, .mobile-nav {
         display: none;
     }
 
-    #nav-links {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
+    nav, nav li, nav li a {
+        background-color: #262626;;
     }
 
-    /* Desktop Navigation Styles */
-    nav.tab-desk {
-        background-color: #262626;
-        padding: 0;
-        border-radius: 0;
-    }
+    /* Tablet Viewport: Style rules for nav area */
 
-    #nav-links a {
+    .mobile-nav a {
         color: white;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 2em;
         text-decoration: none;
-        padding: 1em;
-        display: inline-block;
+        padding: 3%;
+        display: block;
     }
 
-    #nav-links a:hover {
+    .mobile-nav a.menu-icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu-icon div {
+        height: 50px;
+        width: 50px;
         background-color: #404040;
     }
 
-    /* Carousel syle rules for tablet */
-    .carousel {
-        max-width: 700px;
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+
+    nav li a {
+        padding: 0.5em;
+    }
+
+    /* Style rules for table */
+    table {
+        border: 1px solid #0d0d0d;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    caption {
+        font-size: 2em;
+        font-weight: bold;
+        padding: 1%;
+        color: black;
+    }
+
+    th, td {
+        border: 1px solid #000000;
+        padding: 1%;
+        word-wrap: break-word;
+    }
+
+    th {
+        background-color: #bfbfbf;
+        color: black;
+        font-size: 2em;
+    }
+
+    td {
+        background-color: #bfbfbf;
+        color: black;
+        font-size: 1.15em;
+    }
+
+    th:nth-child(odd) {
+        background-color: #cccccc;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
+    }
+
+    /* style rules for header */
+    header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+    }
+    span.tab-desk {
+        display: inline;
     }
 }
 
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px), print {
 
     /* Desktop Viewport: Style rule for header */
     header {
@@ -338,12 +355,12 @@ footer a {
     nav.stick {
         position: sticky;
         top: 0;
-        z-index: 2;
     }
-
-    #nav-links a {
-        font-size: 1.15em;
-        padding: 0.8em 1.5em;
+    nav li {
+        font-size: 1.5em;
+    }
+    nav li a {
+        padding: 0.5em 1.5em;
     }
 
     /* Desktop Viewport: Style rules for main content */
@@ -351,21 +368,56 @@ footer a {
         margin-left: 5%;
     }
 
-    /* Desktop style rules for carousel */
-    .carousel {
-        max-width: 800px;
+    /* Style rules for table */
+    table {
+        border: 1px solid #0d0d0d;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    caption {
+        font-size: 2em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    th, td {
+        border: 1px solid #000000;
+        padding: 1%;
+        word-wrap: break-word;
+    }
+
+    th {
+        background-color: #999999;
+        color: black;
+        font-size: 1.15em;
+    }
+
+    th:nth-child(odd) {
+        background-color: #cccccc;
+    }
+
+    .grid {
+        grid-template-columns: auto auto auto auto;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
     }
 }
 
 /* Media Query for Large Desktop Viewports */
-@media screen and (min-width: 1921px) {
+@media screen and (min-width: 1921px), print {
     #wrapper {
         width: 1920px;
         margin: 0 auto;
     }
 }
 
-/* Hover effects */
+/* for image hover effects */
+
 .fade:hover {
     opacity: 0.3;
 }
