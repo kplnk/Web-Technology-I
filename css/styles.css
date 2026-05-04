@@ -210,6 +210,22 @@ footer a {
     color: #ffffff;
 }
 
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+    display: block;
+}
+
+/* Style rules for header area */
+.mobile h1{
+    padding: 1.5%;
+    text-align: center;
+}
+
+.mobile h3{
+    padding: 1.5%;
+    text-align: center;
+}
+
 .tab-desk  {
     display: none;
 }
