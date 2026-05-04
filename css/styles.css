@@ -203,7 +203,8 @@ footer {
     font-size: 0.85em;
     background-color: #262626;
     color: #ffffff;
-    padding: 1% 0%;
+    padding: 1% 0;
+    width: 100%;
 }
 
 footer a {
@@ -228,6 +229,10 @@ footer a {
 
 .tab-desk  {
     display: none;
+}
+
+header {
+    width: 100%;
 }
 
 /* Style rules for Tablet Viewport */
