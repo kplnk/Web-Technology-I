@@ -1,12 +1,8 @@
 /*CSS Reset*/
-body, header, nav, main, footer, img, h1, h3, ul {
-    margin: 0; 
-    padding: 0; 
+body, header, nav, main, footer, img, h1, ul {
+    margin: 0;
+    padding: 0;
     border: 0;
-}
-
-.center {
-    text-align: center;
 }
 
 .info {
@@ -17,27 +13,18 @@ body, header, nav, main, footer, img, h1, h3, ul {
     padding: 0.5in;
 }
 
-.info h2{
-    font-size: 2em;
-}
-
-/* Hide tab-desk class */
-.tab-desk, #menu-links {
-    display: none;
-}
-
-/*Style rules for header*/
+/* Style rules for header */
 header {
     text-align: center;
-    color:#ffffff;
+    color: #ffffff;
     background-color: #404040;
 }
 
-h3 {
-    text-align: center;
+header img {
+    display: none;
 }
 
-/*Style rules for body and images*/
+/* Body and images */
 body {
     background-color: #404040;
 }
@@ -47,56 +34,7 @@ img {
     display: block;
 }
 
-/* Style rules for cards*/
-.card-description {
-    position: relative;
-}
-
-.card {
-    width: auto;
-    height: auto;
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.card img {
-    width: auto;
-    height: auto;
-    display: block;
-}
-
-.card:hover {
-    transform: scale(110%);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-/* Style rules for mobile viewport */
-
-/* Style rules to show mobile class and hide tab-desk class */
-.mobile {
-    display: block;
-}
-
-/* Style rules for header area */
-.mobile h1{
-    padding: 2%;
-    text-align: center;
-    font-family: Emblema One, serif;
-}
-
-.mobile h3{
-    padding: 2%;
-    text-align: center;
-    font-family: Lora, serif;
-}
-
-.tab-desk {
-    display: none;
-}
-
-/*Style rules for navigation area*/
+/* Style rules for nav */
 nav {
     background-color: #262626;
 }
@@ -107,43 +45,36 @@ nav ul {
 }
 
 nav li {
-    display: block;
+    display: inline-block;
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-}
-
-a {
-    text-decoration: none;
-    color: white;
 }
 
 nav li a {
     display: block;
     color: #ffffff;
-    padding: .5em 2em;
+    padding: 0.5em 1.5em;
     text-decoration: none;
 }
 
-/* misc classes */
-
-.stick {
+nav li a:hover {
+    background-color: #404040;
+    text-shadow: 2px 2px #000000;
 }
 
-.cardList {
-    list-style-type: none;
-    background-image: linear-gradient(#404040, #4d4d4d);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+nav.stick {
+    position: sticky;
+    top: 0;
 }
 
-.cardList li {
-    display: inline-block;
-    padding: 10px;
+/* Links */
+a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
-/*Style rules for main content*/
+/* Main content */
 main {
     padding: 2%;
     font-family: Verdana, Arial, sans-serif, Lora;
@@ -151,20 +82,29 @@ main {
     background-image: linear-gradient(#404040, #4d4d4d);
 }
 
-main p{
+main p {
     font-size: 1.25em;
-    color: #ffffff;
-}
-
-main h3{
-    padding-top: 2%;
-    color: #ffffff;
 }
 
 main ul {
     list-style-type: square;
 }
 
+/* Style rules for cards */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(110%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Box styling */
 .box {
     display: block;
     margin-bottom: 0.5in;
@@ -173,26 +113,7 @@ main ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/*Style rules for class and id selectors*/
-.link{
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.action {
-    font-size: 1.75em;
-    font-weight: bold;
-    text-align: center;
-}
-
-.round {
-    border-radius: 6px;
-}
-
-#info ul {
-    margin-left: 10%;
-}
-
+/* Contact section */
 #contact {
     text-align: center;
 }
@@ -204,12 +125,10 @@ main ul {
 }
 
 .tel-link a {
-    color: #ffffff;
-    text-decoration: none;
     font-weight: bold;
 }
 
-/*Style rules for footer content*/
+/* Footer */
 footer {
     text-align: center;
     font-size: 0.85em;
@@ -220,59 +139,18 @@ footer {
 
 footer a {
     color: #ffffff;
-    text-decoration: none;
 }
 
-/* Media Query for Tablet Viewport */
-@media screen and (min-width: 620px), print {
-    /* Tablet Viewport: Show tab-desk class, hide mobile class */
-    .tab-desk {
+/* Style rules for Tablet Viewport */
+@media screen and (min-width: 620px) {
+    header img {
         display: block;
-    }
-
-    .mobile, .mobile-nav {
-        display: none;
-    }
-
-    nav, nav li, nav li a {
-        background-color: #262626;;
-    }
-
-    /* Tablet Viewport: Style rules for nav area */
-
-    .mobile-nav a {
-        color: white;
-        text-align: center;
-        font-size: 2em;
-        text-decoration: none;
-        padding: 3%;
-        display: block;
-    }
-
-    .mobile-nav a.menu-icon {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .menu-icon div {
-        height: 50px;
-        width: 50px;
-        background-color: #404040;
     }
 
     nav li {
-        border-top: none;
-        display: inline-block;
         font-size: 1.25em;
     }
 
-    nav li a {
-        padding: 0.5em;
-    }
-
-    /* Style rules for table */
     table {
         border: 1px solid #0d0d0d;
         border-collapse: collapse;
@@ -309,58 +187,14 @@ footer a {
     th:nth-child(odd) {
         background-color: #cccccc;
     }
-
-    .grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 20px;
-    }
-
-    aside {
-        grid-column: 1 / span 2;
-    }
-
-    /* style rules for header */
-    header h1 {
-        margin: 0;
-        padding: 0;
-        font-size: 2em;
-    }
-    span.tab-desk {
-        display: inline;
-    }
 }
 
-/* Media Query for Desktop Viewport */
-@media screen and (min-width: 1000px), print {
-
-    /* Desktop Viewport: Style rule for header */
+/* Style rules for Desktop Viewport */
+@media screen and (min-width: 1000px) {
     header {
         padding: 2%;
     }
 
-    /* Desktop Viewport: Style rules for nav area */
-    nav.stick {
-        position: sticky;
-        top: 0;
-    }
-    nav li {
-        font-size: 1.5em;
-    }
-    nav li a {
-        padding: 0.5em 1.5em;
-    }
-    nav li a:hover {
-        background-color: #404040;
-        text-shadow: 2px 2px #000000;
-    }
-
-    /* Desktop Viewport: Style rules for main content */
-    #info ul {
-        margin-left: 5%;
-    }
-
-    /* Style rules for table */
     table {
         border: 1px solid #0d0d0d;
         border-collapse: collapse;
@@ -390,26 +224,12 @@ footer a {
     th:nth-child(odd) {
         background-color: #cccccc;
     }
-
-    .grid {
-        grid-template-columns: auto auto auto auto;
-    }
-
-    aside {
-        grid-column: 1 / span 2;
-    }
 }
 
-/* Media Query for Large Desktop Viewports */
-@media screen and (min-width: 1921px), print {
+/* Style rules for Large Desktop Viewport */
+@media screen and (min-width: 1921px) {
     #wrapper {
         width: 1920px;
         margin: 0 auto;
     }
-}
-
-/* for image hover effects */
-
-.fade:hover {
-    opacity: 0.3;
 }
