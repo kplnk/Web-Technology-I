@@ -5,6 +5,7 @@ body, header, nav, main, footer, img, h1, ul, section {
     border: 0;
 }
 
+
 /* style rules for div */
 div {
     padding: 10px;
@@ -38,11 +39,12 @@ section {
 
 /* Style rules for header */
 header {
-    text-align: center;
-    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
     background-color: #404040;
-    border-radius: 8px;
 }
+
 
 #nav-links {
     display: none;
