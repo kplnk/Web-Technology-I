@@ -41,6 +41,7 @@ header {
     text-align: center;
     color: #ffffff;
     background-color: #404040;
+    border-radius: 8px;
 }
 
 header img {
