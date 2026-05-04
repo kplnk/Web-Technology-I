@@ -21,8 +21,7 @@ body, header, nav, main, footer, img, h1, h3, ul {
     font-size: 1.5em;
 }
 
-/* Hide tab-desk class */
-.tab-desk, #menu-links {
+.tab-desk {
     display: none;
 }
 
@@ -72,54 +71,61 @@ img {
     transform: scale(110%);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
-/* Style rules for mobile viewport */
 
-/* Style rules to show mobile class and hide tab-desk class */
-.mobile {
-    display: block;
-}
-
-/* Style rules for header area */
-.mobile h1{
-    padding: 2%;
-    text-align: center;
-    font-family: Emblema One, serif;
-}
-
-.mobile h3{
-    padding: 2%;
-    text-align: center;
-    font-family: Lora, serif;
-}
-
-.tab-desk {
-    display: none;
-}
-
-/*Style rules for navigation area*/
-
-
-#nav-links {
-    display: none;
-}
-
-nav {
+/* Style rules for mobile nav */
+.mobile-nav {
+    display: flex;
+    align-items: stretch;
     background-color: #262626;
-    border-radius: 10px;
+    position: relative;
 }
 
-nav ul {
-    list-style-type: none;
+.mobile-nav #menu-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #262626;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.mobile-nav #menu-links.active {
+    display: flex;
+}
+
+.mobile-nav #menu-links a {
+    color: white;
     text-align: center;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+    border-top: 1px solid #404040;
 }
 
-nav li {
-    display: block;
+.mobile-nav #menu-links a:hover {
+    background-color: #404040;
+}
+
+.mobile-nav .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.5em;
+    margin-left: auto;
+}
+
+.mobile-nav .menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #404040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5em;
-    font-family: Geneva, Arial, sans-serif;
-    font-weight: bold;
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+    color: white;
 }
 
 a {
@@ -127,19 +133,46 @@ a {
     color: white;
 }
 
-nav li a {
-    display: block;
-    color: #ffffff;
-    padding: .5em 2em;
-    text-decoration: none;
+/* style rules for carousel */
+main h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1em;
 }
 
-#nav-links:hover {
-    linear-gradient(to top, #262626, #404040);
-    text-shadow: 2px 2px #000000;
+.carousel {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* misc classes */
+.carousel-inner {
+    background-color: #262626;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption h3 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.carousel-caption p {
+    color: white;
+    font-size: 1em;
+    margin: 0;
+}
+
+.carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 5%;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 .stick {
 }
@@ -236,115 +269,51 @@ footer a {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 620px), print {
-    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+@media screen and (min-width: 620px) {
+    /* Tablet Viewport: Show tab-desk nav, hide mobile nav */
     .tab-desk {
         display: block;
     }
 
-    .mobile, .mobile-nav {
+    .mobile-nav {
         display: none;
     }
 
-    nav, nav li, nav li a {
-        background-color: #262626;;
+    #nav-links {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
     }
 
-    /* Tablet Viewport: Style rules for nav area */
+    /* Desktop Navigation Styles */
+    nav.tab-desk {
+        background-color: #262626;
+        padding: 0;
+        border-radius: 0;
+    }
 
-    .mobile-nav a {
+    #nav-links a {
         color: white;
         text-align: center;
-        font-size: 2em;
+        font-size: 1.2em;
         text-decoration: none;
-        padding: 3%;
-        display: block;
+        padding: 1em;
+        display: inline-block;
     }
 
-    .mobile-nav a.menu-icon {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .menu-icon div {
-        height: 50px;
-        width: 50px;
+    #nav-links a:hover {
         background-color: #404040;
     }
 
-    nav li {
-        border-top: none;
-        display: inline-block;
-        font-size: 1.25em;
-    }
-
-    nav li a {
-        padding: 0.5em;
-    }
-
-    /* Style rules for table */
-    table {
-        border: 1px solid #0d0d0d;
-        border-collapse: collapse;
-        margin: 0 auto;
-        width: 100%;
-        table-layout: fixed;
-    }
-
-    caption {
-        font-size: 2em;
-        font-weight: bold;
-        padding: 1%;
-        color: black;
-    }
-
-    th, td {
-        border: 1px solid #000000;
-        padding: 1%;
-        word-wrap: break-word;
-    }
-
-    th {
-        background-color: #bfbfbf;
-        color: black;
-        font-size: 2em;
-    }
-
-    td {
-        background-color: #bfbfbf;
-        color: black;
-        font-size: 1.15em;
-    }
-
-    th:nth-child(odd) {
-        background-color: #cccccc;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 20px;
-    }
-
-    aside {
-        grid-column: 1 / span 2;
-    }
-
-    /* style rules for header */
-    header h1 {
-        margin: 0;
-        padding: 0;
-        font-size: 2em;
-    }
-    span.tab-desk {
-        display: inline;
+    /* Carousel syle rules for tablet */
+    .carousel {
+        max-width: 700px;
     }
 }
 
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 1000px), print {
+@media screen and (min-width: 1000px) {
 
     /* Desktop Viewport: Style rule for header */
     header {
@@ -355,12 +324,12 @@ footer a {
     nav.stick {
         position: sticky;
         top: 0;
+        z-index: 100;
     }
-    nav li {
-        font-size: 1.5em;
-    }
-    nav li a {
-        padding: 0.5em 1.5em;
+
+    #nav-links a {
+        font-size: 1.15em;
+        padding: 0.8em 1.5em;
     }
 
     /* Desktop Viewport: Style rules for main content */
@@ -368,56 +337,21 @@ footer a {
         margin-left: 5%;
     }
 
-    /* Style rules for table */
-    table {
-        border: 1px solid #0d0d0d;
-        border-collapse: collapse;
-        margin: 0 auto;
-        width: 100%;
-        table-layout: fixed;
-    }
-
-    caption {
-        font-size: 2em;
-        font-weight: bold;
-        padding: 1%;
-    }
-
-    th, td {
-        border: 1px solid #000000;
-        padding: 1%;
-        word-wrap: break-word;
-    }
-
-    th {
-        background-color: #999999;
-        color: black;
-        font-size: 1.15em;
-    }
-
-    th:nth-child(odd) {
-        background-color: #cccccc;
-    }
-
-    .grid {
-        grid-template-columns: auto auto auto auto;
-    }
-
-    aside {
-        grid-column: 1 / span 2;
+    /* Desktop style rules for carousel */
+    .carousel {
+        max-width: 800px;
     }
 }
 
 /* Media Query for Large Desktop Viewports */
-@media screen and (min-width: 1921px), print {
+@media screen and (min-width: 1921px) {
     #wrapper {
         width: 1920px;
         margin: 0 auto;
     }
 }
 
-/* for image hover effects */
-
+/* Hover effects */
 .fade:hover {
     opacity: 0.3;
 }
