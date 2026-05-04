@@ -78,6 +78,7 @@ img {
     align-items: stretch;
     background-color: #262626;
     position: relative;
+    z-index: 3; /* prevents other items from overlapping/blocking menu when opened*/
 }
 
 .mobile-nav #menu-links {
@@ -88,6 +89,7 @@ img {
     position: absolute;
     top: 50px;
     left: 0;
+    z-index: 3;
 }
 
 .mobile-nav #menu-links.active {
@@ -115,6 +117,7 @@ img {
     cursor: pointer;
     padding: 0.5em;
     margin-left: auto;
+    z-index: 3;
 }
 
 .mobile-nav .menu-icon div {
@@ -128,12 +131,8 @@ img {
     color: white;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
 
-/* style rules for carousel */
+/* Style rules for carousel */
 main h2 {
     color: white;
     text-align: center;
@@ -143,20 +142,31 @@ main h2 {
 .carousel {
     max-width: 600px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .carousel-inner {
     background-color: #262626;
+    position: relative;
 }
 
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
 }
 
 .carousel-caption h3 {
     color: white;
     font-size: 1.5em;
-    margin-bottom: 0.5em;
+    margin: 0 0 0.5em 0;
 }
 
 .carousel-caption p {
@@ -166,27 +176,31 @@ main h2 {
 }
 
 .carousel-control {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 5%;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 8%;
+    opacity: 0.6;
 }
 
 .carousel-control:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
 }
 
-.stick {
+.carousel-control.left {
+    left: 0;
 }
 
-.cardList {
-    list-style-type: none;
-    background-image: linear-gradient(#404040, #4d4d4d);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+.carousel-control.right {
+    right: 0;
 }
 
-.cardList li {
-    display: inline-block;
-    padding: 10px;
+.carousel-control span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 
 /*Style rules for main content*/
 main {
@@ -324,7 +338,7 @@ footer a {
     nav.stick {
         position: sticky;
         top: 0;
-        z-index: 100;
+        z-index: 2;
     }
 
     #nav-links a {
