@@ -5,6 +5,11 @@ body, header, nav, main, footer, img, h1, ul, section {
     border: 0;
 }
 
+/* style rules for section */
+section {
+    background-color: whitesmoke;
+}
+
 /* Style rules for about content */
 #mtg,
 #yugioh,
@@ -67,10 +72,7 @@ nav li {
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
-}
-
-nav li {
-    border: 0.5em white;
+    border-bottom: 0.5em white;
 }
 
 nav li a {
@@ -80,9 +82,14 @@ nav li a {
     text-decoration: none;
 }
 
+nav li:hover {
+    border-bottom: burlywood;
+}
+
 nav li a:hover {
-    background-color: #404040;
+    background-image: linear-gradient(#404040, #4d4d4d);
     text-shadow: 2px 2px #000000;
+    transform: scale(110%);
 }
 
 nav.stick {
@@ -127,7 +134,7 @@ main ul {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-/* Box styling */
+/* style rules for box */
 .box {
     display: block;
     margin-bottom: 0.5in;
@@ -136,7 +143,7 @@ main ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Contact section */
+/* style rules for contact */
 #contact {
     text-align: center;
 }
