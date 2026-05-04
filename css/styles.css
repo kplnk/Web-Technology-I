@@ -39,7 +39,7 @@ section {
 
 /* Style rules for header */
 header {
-    padding: 20px;
+    padding: 10px;
     background-color: #262626;
     color: white;
     border-radius: 8px;
@@ -231,10 +231,6 @@ footer a {
 
 .tab-desk  {
     display: none;
-}
-
-header {
-    width: 100%;
 }
 
 /* Style rules for Tablet Viewport */
