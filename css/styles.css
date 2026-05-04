@@ -5,6 +5,11 @@ body, header, nav, main, footer, img, h1, ul, section {
     border: 0;
 }
 
+/* style rules for div */
+div {
+    padding: 10px;
+}
+
 /* style rules for section */
 section {
     background-color: whitesmoke;
