@@ -44,7 +44,7 @@ header {
     border-radius: 8px;
 }
 
-header img {
+#nav-links {
     display: none;
 }
 
@@ -63,6 +63,30 @@ nav {
     background-color: #262626;
     border-radius: 10px;
     !important;
+}
+
+.mobile-nav a {
+    color: #4d4d4d;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #4d4d4d;
+    padding: 2%;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #262626;
 }
 
 nav ul {
@@ -186,6 +210,10 @@ footer a {
     color: #ffffff;
 }
 
+.tab-desk  {
+    display: none;
+}
+
 /* Style rules for Tablet Viewport */
 @media screen and (min-width: 620px) {
     header img {
@@ -195,6 +223,14 @@ footer a {
     nav li {
         font-size: 1.25em;
 
+    }
+
+    .mobile-nav  {
+        display: none;
+    }
+
+    .tab-desk  {
+        display: block;
     }
 
     table {
