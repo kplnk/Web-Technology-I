@@ -39,11 +39,10 @@ section {
 
 /* Style rules for header */
 header {
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
     padding: 20px;
-    background-color: #404040;
+    background-color: #262626;
+    color: white;
+    border-radius: 8px;
 }
 
 
