@@ -1,11 +1,14 @@
 /*CSS Reset*/
-body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption{
+body, header, nav, main, footer, img, h1, h3, ul {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* style rules for info class */
+.center {
+    text-align: center;
+}
+
 .info {
     background-color: #737373;
     text-align: center;
@@ -69,7 +72,6 @@ img {
     transform: scale(110%);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
-
 /* Style rules for mobile viewport */
 
 /* Style rules to show mobile class and hide tab-desk class */
@@ -90,38 +92,20 @@ img {
     font-family: Lora, serif;
 }
 
-.tab-desk, #nav-links, .desktop {
+.tab-desk {
     display: none;
 }
 
 /*Style rules for navigation area*/
+
+
+#nav-links {
+    display: none;
+}
+
 nav {
     background-color: #262626;
     border-radius: 10px;
-}
-
-.mobile-nav a {
-    color: #fff;
-    text-align: center;
-    font-size: 2em;
-    text-decoration: none;
-    padding: 3%;
-    display: block;
-}
-
-.mobile-nav a.nav-icon {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: white;
-    padding: 2%;
-}
-
-.nav-icon div {
-    height: 40px;
-    width: 40px;
-    color: black;
 }
 
 nav ul {
@@ -138,11 +122,37 @@ nav li {
     border-bottom: 1px solid #ffffff;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 nav li a {
     display: block;
     color: #ffffff;
     padding: .5em 2em;
     text-decoration: none;
+}
+
+#nav-links:hover {
+    linear-gradient(to top, #262626, #404040);
+    text-shadow: 2px 2px #000000;
+}
+
+/* misc classes */
+
+.stick {
+}
+
+.cardList {
+    list-style-type: none;
+    background-image: linear-gradient(#404040, #4d4d4d);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.cardList li {
+    display: inline-block;
+    padding: 10px;
 }
 
 /*Style rules for main content*/
@@ -167,7 +177,7 @@ main ul {
     list-style-type: square;
 }
 
-.box-container {
+.box {
     display: block;
     margin-bottom: 0.5in;
     padding: 0.5in;
@@ -177,7 +187,6 @@ main ul {
 
 /*Style rules for class and id selectors*/
 .link{
-    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -190,25 +199,6 @@ main ul {
 
 .round {
     border-radius: 6px;
-}
-
-aside {
-    text-align: center;
-    font-size: 1em;
-    font-weight: bold;
-    text-shadow: 4px 4px 8px black;
-}
-
-figure {
-    border: 4px solid white;
-    box-shadow: 6px 6px 10px darkgray;
-    max-width: 400px;
-    margin: 2% auto;
-}
-
-figcaption {
-    padding: 2%;
-    border-top: 4px solid white;
 }
 
 #info ul {
@@ -237,27 +227,12 @@ footer {
     font-size: 0.85em;
     background-color: #262626;
     color: #ffffff;
-    padding: 1% 0;
+    padding: 1% 0%;
 }
 
 footer a {
     color: #ffffff;
     text-decoration: none;
-}
-
-/* Style rules for footer area */
-footer {
-    overflow: auto;
-}
-
-.copyright {
-    float: left;
-    width: 65%;
-}
-
-.social {
-    float: right;
-    width: 25%;
 }
 
 /* Media Query for Tablet Viewport */
@@ -307,15 +282,6 @@ footer {
 
     nav li a {
         padding: 0.5em;
-    }
-
-    aside {
-        grid-column: 1 / span 2;
-    }
-
-    form {
-        width: 70%;
-        margin: 0px auto;
     }
 
     /* Style rules for table */
@@ -372,7 +338,6 @@ footer {
         padding: 0;
         font-size: 2em;
     }
-
     span.tab-desk {
         display: inline;
     }
@@ -380,14 +345,6 @@ footer {
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1000px), print {
-    /* Desktop Viewport: Show desktop class, hide mobile-tablet class*/
-    .desktop {
-        display: block;
-    }
-
-    .mobile-tablet {
-        display: none;
-    }
 
     /* Desktop Viewport: Style rule for header */
     header {
@@ -404,10 +361,6 @@ footer {
     }
     nav li a {
         padding: 0.5em 1.5em;
-    }
-    nav li a:hover {
-        color: #2a1f14;
-        background-color: #f6eee4;
     }
 
     /* Desktop Viewport: Style rules for main content */
@@ -461,9 +414,10 @@ footer {
         width: 1920px;
         margin: 0 auto;
     }
+}
 
-    aside {
-        grid-column: 1 / span 4;
-        font-size: 3em;
-    }
+/* for image hover effects */
+
+.fade:hover {
+    opacity: 0.3;
 }
