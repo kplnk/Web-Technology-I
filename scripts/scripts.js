@@ -1,4 +1,3 @@
-//Hamburger menu script
 function hamburger() {
     var menu = document.getElementById("menu-links");
     if (menu.style.display === "block") {
