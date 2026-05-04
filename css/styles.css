@@ -1,16 +1,21 @@
 /*CSS Reset*/
-body, header, nav, main, footer, img, h1, ul {
+body, header, nav, main, footer, img, h1, ul, section {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-.info {
+#info {
+    clear: left;
     background-color: #737373;
     text-align: center;
     font-size: 1.5em;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     padding: 0.5in;
+}
+
+.round {
+    border-radius: 8px;
 }
 
 /* Style rules for header */
